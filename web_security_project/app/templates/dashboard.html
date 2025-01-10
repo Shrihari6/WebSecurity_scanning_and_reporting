@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Security Project</title>
+    <link rel="stylesheet" href="/app/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Security Project</h1>
+    </header>
+    {% extends "base.html" %}
+    <div class="container">
+        <h2>Welcome, {{ current_user.id }}</h2>
+        <p>Select an option below to get started:</p>
+
+        <div class="nav-buttons">
+            <a href="{{ url_for('main_blueprint.run_nmap_scan') }}">Nmap Scan</a>
+            <a href="{{ url_for('main_blueprint.run_nikto_scan') }}">Nikto Scan</a>
+            <a href="{{ url_for('main_blueprint.view_reports') }}">View Reports</a>
+        </div>
+    </div>
+    {% endblock %}
+    <footer>
+        &copy; 2025 Web Security Project. All rights reserved.
+    </footer>
+</body>
+</html>

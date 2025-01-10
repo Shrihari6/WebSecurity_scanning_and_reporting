@@ -1,0 +1,23 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-09 09:58 India Standard Time
+Nmap scan report for 192.168.10.0
+Host is up (0.055s latency).
+All 1000 scanned ports on 192.168.10.0 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: power-device|firewall|WAP|router|print server|general purpose
+Running (JUST GUESSING): APC embedded (96%), Cisco ASA 9.X (96%), Cisco embedded (96%), Synology embedded (96%), HP embedded (93%), D-Link embedded (89%), Microsoft Windows 2000|2003 (87%)
+OS CPE: cpe:/o:cisco:asa:9.2 cpe:/h:synology:rt1900ac cpe:/h:hp:2101nw cpe:/h:dlink:di-524 cpe:/o:microsoft:windows_2000::sp4 cpe:/o:microsoft:windows_server_2003::sp2
+Aggressive OS guesses: APC Network Management Card 3 (96%), Cisco Adaptive Security Appliance (ASA 9.2) (96%), Cisco Aironet 3800-series WAP (96%), Synology RT1900ac router (96%), HP 2101nw wireless print server (93%), D-Link DI-524 wireless broadband router (89%), Microsoft Windows 2000 SP4 (87%), Microsoft Windows Server 2003 SP2 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   3.00 ms   192.168.46.92
+2   336.00 ms 100.64.0.100
+3   45.00 ms  192.168.27.102
+4   45.00 ms  192.168.28.8
+5   46.00 ms  192.168.10.0
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 20.60 seconds
